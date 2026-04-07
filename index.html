@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banco Patagonia | Vos y lo que querés</title>
+  <style>
+    :root {
+      --primary: #0056b3;
+      --secondary: #2e8b57;
+      --background: #f8f9fa;
+      --dark: #343a40;
+      --light: #ffffff;
+      --gray-light: #e9ecef;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: #444;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-login {
+      background-color: var(--secondary);
+      color: var(--light);
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--light);
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.8rem 1.6rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background-color: var(--secondary);
+      color: var(--light);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--light);
+      border: 2px solid var(--light);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: var(--light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      display: inline-block;
+      background-color: var(--secondary);
+      color: var(--light);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: var(--light);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--light);
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Banco Patagonia</div>
+    <nav>
+      <ul>
+        <li><a href="#">Personas</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Pymes</a></li>
+        <li><a href="#">Canales digitales</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-login">Ingresar</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Banco Patagonia | Vos y lo que querés</h1>
+    <p>Somos un banco comercial con sucursales distribuidas en las principales ciudades. Te acompañamos en cada etapa de tu vida para que alcances todo lo que vos querés.</p>
+    <p>Operá de forma simple y ágil desde donde estés, con tu banca en línea y tu app móvil.</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn btn-primary">Banca en Línea</a>
+      <a href="#" class="btn btn-secondary">Abrir cuenta</a>
+      <a href="#" class="btn btn-secondary">App móvil</a>
+    </div>
+  </section>
+
+  <!-- Canales digitales -->
+  <section class="section">
+    <h2>Canales digitales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Banca en línea</h3>
+        <p>Operá de forma simple y ágil desde tu computadora. Transferencias, pagos de servicios y consultas de saldos en pocos clicks.</p>
+        <a href="#">Ingresá a tu banca</a>
+      </div>
+      <div class="card">
+        <h3>App móvil</h3>
+        <p>Accedé a tu cuenta desde tu celular, creá tu usuario y clave y operá 100 % online sin moverte de casa.</p>
+        <a href="#">Descargá la app</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos principales -->
+  <section class="section" style="background-color: var(--gray-light);">
+    <h2>Productos y servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cuentas</h3>
+        <p>Cuentas corrientes y cajas de ahorro pensadas para vos, con beneficios y facilidades para tu día a día.</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card">
+        <h3>Cuenta sueldo</h3>
+        <p>Recibí tu sueldo con beneficios exclusivos y facilidades para administrar tu dinero.</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card">
+        <h3>Tarjetas</h3>
+        <p>Tarjetas de crédito y débito con seguridad y beneficios para tus compras presenciales y online.</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card">
+        <h3>Préstamos</h3>
+        <p>Financiación para tus proyectos personales o de negocio, con cuotas cómodas y trámites simples.</p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quién -->
+  <section class="section">
+    <h2>Para quién trabajamos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Personas</h3>
+        <p>Soluciones simples para tu vida diaria: cuentas, tarjetas y préstamos personales.</p>
+      </div>
+      <div class="card">
+        <h3>Empresas</h3>
+        <p>Flujos de caja, cuentas dedicadas y herramientas para tu negocio.</p>
+      </div>
+      <div class="card">
+        <h3>Pymes</h3>
+        <p>Productos adaptados a pequeñas y medianas empresas con acompañamiento especializado.</p>
+      </div>
+      <div class="card">
+        <h3>Agro</h3>
+        <p>Cuentas, financiación e inversión para el sector agropecuario.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Banco Patagonia S.A. Todos los derechos reservados.</p>
+    <div>
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Sucursales</a>
+      <a href="#">Contacto</a>
+    </div>
+  </footer>
+</body>
+</html>
